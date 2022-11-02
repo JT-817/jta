@@ -1,7 +1,11 @@
+import { Container } from "reactstrap"
+import FeaturedList from "../features/products/FeaturedList"
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <Container>
+      <FeaturedList />
+    </Container>
   )
 }
 
