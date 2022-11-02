@@ -11,6 +11,7 @@ export const PRODUCTS = [
     countInStock: 10,
     rating: 4.5,
     numReviews: 12,
+    featured: true,
   },
   {
     id: 1,
@@ -24,6 +25,7 @@ export const PRODUCTS = [
     countInStock: 7,
     rating: 4.0,
     numReviews: 8,
+    featured: false,
   },
   {
     id: 2,
@@ -37,6 +39,7 @@ export const PRODUCTS = [
     countInStock: 5,
     rating: 3,
     numReviews: 12,
+    featured: false,
   },
   {
     id: 3,
@@ -50,6 +53,7 @@ export const PRODUCTS = [
     countInStock: 11,
     rating: 5,
     numReviews: 12,
+    featured: true,
   },
   {
     id: 4,
@@ -63,6 +67,7 @@ export const PRODUCTS = [
     countInStock: 7,
     rating: 3.5,
     numReviews: 10,
+    featured: false,
   },
   {
     id: 5,
@@ -76,5 +81,6 @@ export const PRODUCTS = [
     countInStock: 0,
     rating: 4,
     numReviews: 12,
+    featured: true,
   },
 ];

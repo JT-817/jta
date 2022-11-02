@@ -1,13 +1,25 @@
 import { Card, CardImg, CardTitle, CardBody, CardText } from "reactstrap";
+import { Link } from "react-router-dom";
 
 const productsCard = ({ product }) => {
   const { image, name, description, price } = product;
   return (
     <Card>
-      <CardImg top width="100%" src={image} alt={name} />
+      <Link to={`/product/${product.id}`}>
+        <CardImg top width="100%" src={image} alt={name} />
+      </Link>
       <CardBody>
-        <CardTitle tag="h5">{name}</CardTitle>
-        <CardText>{description}<br/><strong>Price: </strong>{price}$</CardText>
+        <Link to={`/product/${product.id}`}>
+          <CardTitle tag="h5">{name}</CardTitle>
+        </Link>
+      </CardBody>
+      <CardBody>
+        <CardText>
+          {description}
+          <br />
+          <strong>Price: </strong>
+          {price}$
+        </CardText>
       </CardBody>
     </Card>
   );
