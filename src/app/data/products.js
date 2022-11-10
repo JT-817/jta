@@ -1,8 +1,9 @@
+import airpods from './images/airpods.jpg';
 export const PRODUCTS = [
   {
     id: 0,
     name: "Airpods Wireless Bluetooth Headphones",
-    image: "/images/airpods.jpg",
+    image: airpods,
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
     brand: "Apple",
@@ -53,7 +54,7 @@ export const PRODUCTS = [
     countInStock: 11,
     rating: 5,
     numReviews: 12,
-    featured: true,
+    featured: false,
   },
   {
     id: 4,
@@ -81,6 +82,6 @@ export const PRODUCTS = [
     countInStock: 0,
     rating: 4,
     numReviews: 12,
-    featured: true,
+    featured: false,
   },
 ];

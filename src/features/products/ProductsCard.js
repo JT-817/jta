@@ -1,28 +1,26 @@
-import { Card, CardImg, CardTitle, CardBody, CardText } from "reactstrap";
 import { Link } from "react-router-dom";
+import { Card, CardImg, CardTitle, CardBody, CardText } from "reactstrap";
 
-const productsCard = ({ product }) => {
-  const { image, name, description, price } = product;
+const ProductsCard = ({ product }) => {
+  const { id ,image, name, description, price } = product;
   return (
-    <Card>
-      <Link to={`/product/${product.id}`}>
-        <CardImg top width="100%" src={image} alt={name} />
-      </Link>
-      <CardBody>
-        <Link to={`/product/${product.id}`}>
+    <Link to={`${id}`}>
+      <Card>
+        <CardImg top height="50%" className="h-50%" src={image} alt={name} />
+        <CardBody>
           <CardTitle tag="h5">{name}</CardTitle>
-        </Link>
-      </CardBody>
-      <CardBody>
-        <CardText>
-          {description}
-          <br />
-          <strong>Price: </strong>
-          {price}$
-        </CardText>
-      </CardBody>
-    </Card>
+        </CardBody>
+        <CardBody>
+          <CardText>
+            {description}
+            <br />
+            <strong>Price: </strong>
+            {price}$
+          </CardText>
+        </CardBody>
+      </Card>
+    </Link>
   );
 };
 
-export default productsCard;
+export default ProductsCard;

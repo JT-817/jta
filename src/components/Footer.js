@@ -4,22 +4,31 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="site-footer">
+      <hr />
       <Container className="bg-primary text-light" fluid>
         <Row className="text-center">
           <Col className="col-sm-6 col-md-4">
             <h5>Links</h5>
             <ul className="list-unstyled">
               <li>
-                <Link to="/">Home</Link>
+                <Link className="link-light" to="/">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/products">Products</Link>
+                <Link className="link-light" to="/products">
+                  Products
+                </Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link className="link-light" to="/about">
+                  About
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link className="link-light" to="/contact">
+                  Contact
+                </Link>
               </li>
             </ul>
           </Col>
