@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
-import { Container,Row } from "reactstrap"
-import ProductsCard from "../features/products/ProductsCard";
+import { Col, Container,Row } from "reactstrap"
+import ProductCard from "../features/products/ProductCard";
 import { selectProductById } from "../features/products/productsSlice";
 
 
@@ -10,7 +10,9 @@ const ProductPage = () => {
   return (
     <Container>
       <Row>
-        <ProductsCard product={product}/>
+        <Col>
+        <ProductCard product={product}/>
+        </Col>
       </Row>
     </Container>
   )
