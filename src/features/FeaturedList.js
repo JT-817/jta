@@ -1,5 +1,5 @@
 import { Col, Row } from "reactstrap";
-import { selectFeaturedProducts } from "./productsSlice";
+import { selectFeaturedProducts } from "./products/productsSlice";
 import FeaturedCard from "./FeaturedCard";
 
 const FeaturedList = () => {
